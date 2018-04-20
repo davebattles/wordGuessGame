@@ -129,10 +129,13 @@ font-family: 'Josefin Sans', sans-serif;
 
 html, body { 
 	height: 100%; 
-	background-color: lighten(#090D19, 20%);
-  background-image: url("/assets/giphy/giphy.gif");
+  background-color: lighten(#090D19, 20%);
+  
+
+
+  background-image: url("../giphy/giphy.gif");
 	background-size: cover;
-  background-position: 50% 50% ;
+  background-position: center;
   position: relative;
  
 }
