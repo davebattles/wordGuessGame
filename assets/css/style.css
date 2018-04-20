@@ -1,0 +1,228 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(190, 49, 49);
+  font-size: 50px;
+  text-shadow: rgb(121, 37, 110) 5px 5px ;
+}
+
+
+
+
+body {
+
+  background: rgb(38, 37, 48);
+  text-align: center;
+  	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#dust {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.title {
+    transform: scale(0);
+    filter: blur(10px);
+}
+h1 {
+  font-size: 2em;
+  margin-top: 50px;
+  opacity: 1;
+  position: relative;
+  color: #E3E3EB;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 3px solid #E3E3EB;
+  letter-spacing: 10px;
+
+
+  span {
+    letter-spacing: normal;
+    display: block;
+    margin-bottom: 10px;
+    font-size: .5em;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+    &:before, &:after {
+      content: "";
+      width: 43%;
+      height: 3px;
+      border-radius: 5px;
+      background: #E3E3EB;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      top: .5em;
+    }
+    &:after {
+      left: 0;
+    }
+  }
+}
+p {
+font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 14px;
+  letter-spacing: 5px;
+  line-height:1.2em;
+  
+}
+
+/*ANimation stuff*/
+.title {
+  animation-name: zoomIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(.3);
+    filter: blur(10px);
+  }
+  40% {
+    transform: scale(1);
+  }
+  100% {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+@import url(//fontlibrary.org/face/effects-eighty);
+
+
+* {
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+}
+
+
+
+.guesses {
+  position: absolute;
+  top: 300px;
+  left: 5px;
+  
+}
+
+
+
+html, body { 
+	height: 100%; 
+	background-color: lighten(#090D19, 20%);
+  background-image: url("/assets/giphy/giphy.gif");
+	background-size: cover;
+  background-position: 50% 50% ;
+  position: relative;
+ 
+}
+
+
+body { 
+	mix-blend-mode: screen;
+}
+
+.centerer {
+	position: absolute;
+	top: 0; right: 0; left: 0; bottom: 0;
+	height: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.porthole {
+	width: 30vw;
+	height: auto;
+	mix-blend-mode: multiply;
+}
+
+.text { 
+	font-size: 4vw;
+    font-weight: normal; 
+  font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1vw;
+	color: transparent;
+  width: 100%;
+	text-align: center;
+	mix-blend-mode: screen;
+}
+
+.one {
+	text-shadow: 0 0.1vw 0.05vw #6858F2;
+}
+
+.two {
+	text-shadow: 0 0 0.1vw #FFFFFF;
+	animation: text-2 0.5s infinite;
+}
+.three {
+	text-shadow: 0 0 0.1vw #FFFFFF;
+	animation: text-2 1s infinite;
+}
+
+
+
+@keyframes text-2 {
+	0% {
+		transform: scale(1) translate(0, 0) skew(0deg);
+	}
+	7% {
+		transform:  scale(1) translate(0, 0) skew(0deg);
+	}
+	8% { 
+		transform:  scale(1.2) translate(-20px, 30px) skew(0deg);
+	}
+	11% { 
+		transform:  scale(1.2) translate(-20px, 30px) skew(0deg);
+	}
+	12% {
+		transform:  scale(0) translate(0,0) skew(0deg);
+	}
+	29% { 
+		transform: skew(-50deg);
+	}
+	32% { 
+		transform: skew(0deg);
+	}
+	41% {
+		transform: skew(0deg);
+	}
+	67% {
+		transform:  scale(1) translate(0, 0) skew(0deg);
+	}
+	68% { 
+		transform:  scale(1.2) translate(50px, 35px) skew(0deg);
+	}
+	71% { 
+		transform:  scale(1.2) translate(50px, 35px) skew(0deg);
+	}
+	72% {
+		transform:  scale(0) translate(0,0) skew(0deg);
+	}
+	100% {
+		transform: skew(0deg);
+	}
+}
+
